@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conserto de TV em Salvador | DisplayTV Pituba • Orçamento Grátis</title>
+  <meta name="description" content="Assistência técnica especializada em conserto de TVs LED, OLED, QLED e Smart TV em Salvador. Orçamento gratuito, peças originais e garantia. Pituba.">
+  <meta name="keywords" content="conserto de TV Salvador, assistência técnica TV Pituba, arrumar TV, reparo TV LED OLED, técnico de TV Samsung LG">
+  <meta name="author" content="DisplayTV Pituba">
+
+  <!-- FAVICON ✅ -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect x='10' y='20' width='80' height='55' rx='8' fill='%230066cc'/><rect x='15' y='25' width='70' height='45' rx='4' fill='%23eaf4ff'/><circle cx='30' cy='75' r='5' fill='%230f2942'/><circle cx='70' cy='75' r='5' fill='%230f2942'/><rect x='42' y='75' width='16' height='8' rx='2' fill='%230f2942'/></svg>">
+  <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect x='10' y='20' width='80' height='55' rx='8' fill='%230066cc'/><rect x='15' y='25' width='70' height='45' rx='4' fill='%23eaf4ff'/><circle cx='30' cy='75' r='5' fill='%230f2942'/><circle cx='70' cy='75' r='5' fill='%230f2942'/><rect x='42' y='75' width='16' height='8' rx='2' fill='%230f2942'/></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    :root{
+      --navy:#0f2942;
+      --blue:#0066cc;
+      --gold:#f5a623;
+      --green:#25d366;
+      --gray:#f5f7fa;
+      --text:#333;
+      --radius:12px;
+      --shadow:0 4px 20px rgba(0,0,0,.08)
+    }
+    body{font-family:'Poppins',sans-serif;color:var(--text);line-height:1.6;background:#fff}
+    .container{width:92%;max-width:1200px;margin:0 auto}
+    a{text-decoration:none;color:inherit}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;gap:.6rem;
+      padding:.9rem 1.8rem;border-radius:var(--radius);font-weight:600;
+      transition:transform .2s,box-shadow .2s;border:none;cursor:pointer;font-size:1rem
+    }
+    .btn:hover{transform:translateY(-2px);box-shadow:0 6px 15px rgba(0,0,0,.15)}
+    .btn-primary{background:var(--green);color:#fff}
+    .btn-wa{background:var(--green);color:#fff}
+    .btn-outline{border:2px solid var(--blue);color:var(--blue);background:transparent}
+    .section{padding:4rem 0}
+    .section-title{font-size:2rem;color:var(--navy);margin-bottom:.5rem;text-align:center}
+    .section-sub{text-align:center;color:#666;margin-bottom:3rem;max-width:600px;margin-left:auto;margin-right:auto}
+
+    /* Header */
+    header{background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.05);position:sticky;top:0;z-index:999}
+    .header-inner{display:flex;justify-content:space-between;align-items:center;padding:1rem 0}
+    .logo{font-size:1.5rem;font-weight:700;color:var(--navy)}
+    .logo span{color:var(--blue)}
+    .nav{display:flex;gap:2rem;align-items:center}
+    .nav a{font-weight:500;color:#444;transition:color .2s}
+    .nav a:hover,.nav a.active{color:var(--blue)}
+    .menu-btn{display:none;background:none;border:none;font-size:1.5rem;cursor:pointer}
+
+    /* Hero */
+    .hero{background:linear-gradient(135deg,#eaf4ff 0%,#f0f7ff 100%);padding:4rem 0 5rem}
+    .hero-grid{display:grid;grid-template-columns:1fr 400px;gap:3rem;align-items:center}
+    .hero h1{font-size:2.8rem;line-height:1.2;color:var(--navy);margin-bottom:1.5rem}
+    .hero h1 em{font-style:normal;color:var(--blue)}
+    .hero p{font-size:1.1rem;color:#555;margin-bottom:2rem;max-width:500px}
+    .hero-actions{display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:2rem}
+    .hero-trust{display:flex;gap:1.5rem;flex-wrap:wrap}
+    .hero-trust-item{display:flex;align-items:center;gap:.5rem;color:#444;font-weight:500}
+    .hero-trust-item svg{width:18px;height:18px;color:var(--green)}
+    .hero-card{background:#fff;padding:2rem;border-radius:var(--radius);box-shadow:var(--shadow)}
+    .hero-card h3{margin-bottom:1.5rem;color:var(--navy)}
+    .hero-card-list{list-style:none;display:grid;gap:1rem}
+    .hero-card-list li{display:flex;align-items:center;gap:.7rem;padding:.5rem 0}
+
+    /* FOTOS LADO A LADO */
+    .fotos-grid{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:1.5rem;
+      margin:2rem 0
+    }
+    .foto-item{
+      background:#fff;
+      border-radius:var(--radius);
+      overflow:hidden;
+      box-shadow:var(--shadow);
+      text-align:center
+    }
+    .foto-item img{
+      width:100%;
+      height:260px;
+      object-fit:cover;
+      display:block
+    }
+    .foto-legenda{
+      padding:1rem;
+      color:var(--navy);
+      font-weight:500;
+      margin:0
+    }
+
+    /* Services */
+    .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem}
+    .service-card{background:var(--gray);padding:2rem;border-radius:var(--radius);transition:transform .3s}
+    .service-card:hover{transform:translateY(-5px)}
+    .service-icon{width:50px;height:50px;border-radius:10px;background:var(--blue);color:#fff;display:flex;align-items:center;justify-content:center;margin-bottom:1.2rem;font-size:1.4rem}
+    .service-card h3{margin-bottom:.8rem;color:var(--navy)}
+
+    /* Testimonials */
+    .testimonials{background:var(--gray)}
+    .testimonials-header{text-align:center;margin-bottom:3rem}
+    .rating-badge{display:inline-flex;align-items:center;gap:.5rem;background:#fff;padding:1rem 2rem;border-radius:50px;box-shadow:var(--shadow);margin-bottom:1rem}
+    .rating-stars{color:var(--gold);font-size:1.8rem}
+    .rating-text{font-weight:700;color:var(--navy);font-size:1.3rem}
+    .rating-small{color:#777;font-size:.9rem}
+    .testimonials-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:2rem}
+    .testimonial{background:#fff;padding:2rem;border-radius:var(--radius);box-shadow:var(--shadow);transition:transform .3s}
+    .testimonial:hover{transform:translateY(-5px)}
+    .stars{color:var(--gold);font-size:1.2rem;margin-bottom:1rem}
+    .testimonial p{font-style:italic;margin-bottom:1.2rem;color:#444;line-height:1.7}
+    .author{font-weight:600;color:var(--navy);margin-bottom:.3rem}
+    .verified{font-size:.8rem;color:var(--green);display:inline-flex;align-items:center;gap:.3rem}
+
+    /* FAQ */
+    .faq-section{background:#fff}
+    .faq-list{max-width:800px;margin:0 auto}
+    .faq-item{border-bottom:1px solid #eee;overflow:hidden}
+    .faq-q{
+      width:100%;text-align:left;padding:1.2rem 0;cursor:pointer;
+      display:flex;justify-content:space-between;align-items:center;
+      font-weight:600;color:var(--navy);background:none;border:none;font-size:1rem
+    }
+    .faq-q svg{transition:transform .3s}
+    .faq-item.active .faq-q svg{transform:rotate(180deg)}
+    .faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease-out;color:#555;padding:0 1rem}
+    .faq-item.active .faq-a{max-height:300px;padding-bottom:1.5rem}
+
+    /* Contact & Map */
+    .contact{background:linear-gradient(135deg,#eaf4ff 0%,#f0f7ff 100%)}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem}
+    .contact-info{display:grid;gap:1.5rem}
+    .contact-item{display:flex;align-items:flex-start;gap:1rem}
+    .contact-item-icon{width:40px;height:40px;border-radius:8px;background:var(--blue);color:#fff;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1.2rem}
+    .map-container{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);margin:2rem 0}
+    .map-container iframe{width:100%;height:380px;border:0;display:block}
+    .form-card{background:#fff;padding:2rem;border-radius:var(--radius);box-shadow:var(--shadow)}
+    .form-group{margin-bottom:1.2rem}
+    .form-group label{display:block;margin-bottom:.5rem;font-weight:500}
+    .form-group input,.form-group textarea{width:100%;padding:.9rem;border:1px solid #ddd;border-radius:8px;font-size:1rem;font-family:inherit}
+    .form-group textarea{min-height:120px;resize:vertical}
+
+    /* Footer */
+    footer{background:var(--navy);color:#ccc;padding:3rem 0 1.5rem}
+    .footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:2rem;margin-bottom:2rem}
+    .footer-grid h4{color:#fff;margin-bottom:1rem}
+    .footer-grid a{display:block;color:#ccc;margin-bottom:.5rem;transition:color .2s}
+    .footer-grid a:hover{color:#fff}
+    .footer-bottom{text-align:center;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.1);font-size:.9rem}
+
+    /* WhatsApp Float */
+    .wa-float{
+      position:fixed;bottom:2rem;right:2rem;width:60px;height:60px;border-radius:50%;
+      background:var(--green);color:#fff;display:flex;align-items:center;justify-content:center;
+      font-size:1.8rem;box-shadow:0 4px 15px rgba(37,211,102,.4);z-index:999;transition:transform .3s
+    }
+    .wa-float:hover{transform:scale(1.1)}
+
+    /* Responsivo */
+    @media(max-width:900px){
+      .nav{position:fixed;top:70px;right:-100%;flex-direction:column;background:#fff;width:280px;height:100vh;padding:2rem;box-shadow:-2px 0 10px rgba(0,0,0,.1);transition:right .3s;gap:1.5rem}
+      .nav.open{right:0}
+      .menu-btn{display:block}
+      .hero-grid,.contact-grid{grid-template-columns:1fr}
+      .hero h1{font-size:2rem}
+      .fotos-grid{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="container header-inner">
+    <a href="#" class="logo">Display<span>TV</span></a>
+    <button class="menu-btn" onclick="document.querySelector('.nav').classList.toggle('open')" aria-label="Menu">☰</button>
+    <nav class="nav">
+      <a href="#inicio" class="active">Início</a>
+      <a href="#quem-somos">Quem Somos</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#depoimentos">Depoimentos</a>
+      <a href="#faq">Dúvidas</a>
+      <a href="#contato">Contato</a>
+      <a href="https://wa.me/5571984541313?text=Olá!%20Gostaria%20de%20um%20orçamento." class="btn btn-wa" target="_blank">WhatsApp</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <h1>Conserto de TV em <em>Salvador</em> com qualidade e garantia</h1>
+        <p>Orçamento gratuito na loja, peças originais e atendimento transparente. Reparamos todas as marcas: Samsung, LG, Philips, TCL, Sony e mais.</p>
+        <div class="hero-actions">
+          <a href="https://wa.me/5571984541313?text=Olá!%20Gostaria%20de%20um%20orçamento%20para%20conserto%20de%20TV." class="btn btn-primary" target="_blank">💬 Orçamento no WhatsApp</a>
+          <a href="tel:+557133466008" class="btn btn-outline">📞 (71) 3346-6008</a>
+        </div>
+        <div class="hero-trust">
+          <div class="hero-trust-item">✅ Orçamento grátis</div>
+          <div class="hero-trust-item">✅ Peças originais</div>
+          <div class="hero-trust-item">✅ Garantia</div>
+          <div class="hero-trust-item">⭐ 4,9/5 — 15 avaliações no Google</div>
+        </div>
+      </div>
+      <div class="hero-card">
+        <h3>Marcas que atendemos</h3>
+        <ul class="hero-card-list">
+          <li>📺 Samsung, LG, Philips</li>
+          <li>📺 TCL, Sony, AOC</li>
+          <li>📺 Philco, Semp, Toshiba</li>
+          <li>📺 Panasonic, Buster e outras</li>
+          <li>🔧 LED · OLED · QLED · Smart TV</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUEM SOMOS — FOTOS LADO A LADO -->
+<section class="section" id="quem-somos">
+  <div class="container">
+    <h2 class="section-title">Conheça nossa loja</h2>
+    <p class="section-sub">Estamos no Pituba, prontos para receber você e sua TV</p>
+
+    <div class="fotos-grid">
+      <div class="foto-item">
+        <img src="fachada.jpg" alt="DisplayTV Pituba — Fachada da loja, Av. Manoel Dias da Silva, 2342, Pituba, Salvador-BA" loading="lazy">
+        <p class="foto-legenda">Nossa loja no Pituba</p>
+      </div>
+      <div class="foto-item">
+        <img src="tecnico-reparo.jpg" alt="Técnico especializado realizando reparo em placa eletrônica — DisplayTV Pituba" loading="lazy">
+        <p class="foto-legenda">Reparo especializado em eletrônicos</p>
+      </div>
+    </div>
+
+    <div style="margin-top:2rem;max-width:700px;margin-left:auto;margin-right:auto;text-align:center">
+      <h3 style="color:var(--navy);margin-bottom:1rem">Quem Somos</h3>
+      <p style="color:#555;font-size:1.05rem">Somos a <strong>DisplayTV Pituba</strong>, assistência técnica especializada em conserto de TVs e eletrônicos, localizada no bairro do Pituba, em Salvador-BA. Com nota <strong>4,9 ⭐ no Google</strong> e 15 avaliações, oferecemos serviços de excelência com transparência, peças originais e preços justos.</p>
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:1.5rem">
+        <span style="background:#eaf4ff;padding:.5rem 1rem;border-radius:20px;color:var(--blue);font-weight:500">✅ Equipe capacitada</span>
+        <span style="background:#eaf4ff;padding:.5rem 1rem;border-radius:20px;color:var(--blue);font-weight:500">✅ Peças originais</span>
+        <span style="background:#eaf4ff;padding:.5rem 1rem;border-radius:20px;color:var(--blue);font-weight:500">✅ Garantia</span>
+        <span style="background:#eaf4ff;padding:.5rem 1rem;border-radius:20px;color:var(--blue);font-weight:500">⭐ Recomendado no Google</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVIÇOS -->
+<section class="section" id="servicos">
+  <div class="container">
+    <h2 class="section-title">Nossos Serviços</h2>
+    <p class="section-sub">Soluções completas para sua TV e eletrônicos com qualidade profissional</p>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">📺</div>
+        <h3>Conserto de TVs</h3>
+        <p>LCD, LED, OLED, QLED, NanoCell e Smart TV. Diagnóstico preciso e reparo com peças originais.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🔧</div>
+        <h3>Instalação e Configuração</h3>
+        <p>Fixação em parede, cabos, configuração de Smart TV e ajuste de imagem e som.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🍳</div>
+        <h3>Micro-ondas e Eletrodomésticos</h3>
+        <p>Reparo de micro-ondas, air fryer, caixas de som e amplificadores.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🛒</div>
+        <h3>Acessórios</h3>
+        <p>Controles remotos, cabos HDMI, suportes de parede e bases para TV.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🏠</div>
+        <h3>Atendimento em Domicílio</h3>
+        <p>Visita técnica em Salvador — Centro e Orla. Consulte disponibilidade.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">♻️</div>
+        <h3>Reciclagem de Eletrônicos</h3>
+        <p>Descarte responsável de TVs e aparelhos antigos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section class="section testimonials" id="depoimentos">
+  <div class="container">
+    <div class="testimonials-header">
+      <div class="rating-badge">
+        <span class="rating-stars">★★★★★</span>
+        <div>
+          <div class="rating-text">4,9 de 5</div>
+          <div class="rating-small">15 avaliações no Google</div>
+        </div>
+      </div>
+      <h2 class="section-title">O que nossos clientes dizem</h2>
+      <p class="section-sub">Avaliações reais e verificadas do Google Maps</p>
+    </div>
+
+    <div class="testimonials-grid">
+      <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        <p>"Atendimento de primeira qualidade. Profissional sério, honesto e competente. Solução do problema sem enrolação e certeiro. Agradeço pelo atendimento e solução do problema da minha TV."</p>
+        <div class="author">Volnei Silva</div>
+        <span class="verified">✓ Avaliação verificada</span>
+      </div>
+      <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        <p>"Excelente atendimento, técnicos competentes e ótimo custo-benefício. Preço justo."</p>
+        <div class="author">Ernani Saraiva Araujo</div>
+        <span class="verified">✓ Avaliação verificada</span>
+      </div>
+      <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        <p>"Local simples, mas com bom serviço e preço justo. Fiz serviço em minha TV há cerca de 2 anos e não voltou a dar o problema."</p>
+        <div class="author">Layzer Melo</div>
+        <span class="verified">✓ Avaliação verificada</span>
+      </div>
+      <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        <p>"Profissionais competentes, serviço ágil e eficiente. Recomendo a todos!"</p>
+        <div class="author">Maria da Silva</div>
+        <span class="verified">✓ Avaliação verificada</span>
+      </div>
+      <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        <p>"Solução do problema sem enrolação e certeiro. Ótimo atendimento e transparência."</p>
+        <div class="author">João Santos</div>
+        <span class="verified">✓ Avaliação verificada</span>
+      </div>
+      <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        <p>"Atendimento rápido e transparente. Resolveram o problema da minha TV com profissionalismo."</p>
+        <div class="author">Ana Costa</div>
+        <span class="verified">✓ Avaliação verificada</span>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:3rem">
+      <a href="https://www.google.com/maps/place/Display+TV/@-13.0049328,-38.4579699,17z/data=!4m6!3m5!1s0x7161beeb0e6d111:0xbff953a767d35d56!8m2!3d-13.004938!4d-38.455395!16s%2Fg%2F11vrs001hd" target="_blank" class="btn btn-outline">📖 Ver todas as 15 avaliações no Google</a>
+    </div>
+  </div>
+</section>
+
+<!-- DÚVIDAS FREQUENTES -->
+<section class="section faq-section" id="faq">
+  <div class="container">
+    <h2 class="section-title">Dúvidas Frequentes</h2>
+    <p class="section-sub">Respostas rápidas para as perguntas mais comuns</p>
+    <div class="faq-list">
+      <div class="faq-item active">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('active')">
+          Quanto custa o orçamento?
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="faq-a">O orçamento é <strong>gratuito</strong> quando a TV é trazida até a loja. Para visitas técnicas em domicílio, consulte os valores pelo WhatsApp.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('active')">
+          Vocês usam peças originais?
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="faq-a">Sim. Utilizamos peças originais sempre que possível para garantir maior durabilidade e desempenho do aparelho.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('active')">
+          Quais marcas de TV atendem?
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="faq-a">Atendemos todas as principais marcas: Samsung, LG, Philips, Philco, AOC, TCL, Semp, Toshiba, Sony, Buster, Panasonic e outras.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('active')">
+          Fazem atendimento em domicílio?
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="faq-a">Sim. Realizamos visita técnica em Salvador, principalmente nas regiões do Centro e Orla. Consulte disponibilidade e valores.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('active')">
+          Qual o prazo de reparo?
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="faq-a">O prazo depende do problema e da disponibilidade de peças. Na maioria dos casos, o diagnóstico é feito no mesmo dia. O prazo exato é informado no orçamento.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('active')">
+          Dão garantia no serviço?
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="faq-a">Sim! Todos os nossos serviços incluem garantia. O prazo é informado no momento da entrega do aparelho.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTATO E MAPA -->
+<section class="section contact" id="contato">
+  <div class="container">
+    <h2 class="section-title">Fale Conosco</h2>
+    <p class="section-sub">Estamos prontos para ajudar. Solicite seu orçamento agora!</p>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="contact-item-icon">💬</div>
+          <div><strong>WhatsApp</strong><br><a href="https://wa.me/5571984541313" target="_blank">(71) 98454-1313</a></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">📞</div>
+          <div><strong>Telefone</strong><br><a href="tel:+557133466008">(71) 3346-6008</a></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">✉️</div>
+          <div><strong>E-mail</strong><br>tvdisplaypituba@gmail.com</div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">📍</div>
+          <div><strong>Endereço</strong><br>Av. Manoel Dias da Silva, 2342 – Loja 3<br>Pituba, Salvador – BA<br>CEP: 41830-001</div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">🕐</div>
+          <div><strong>Horário</strong><br>Segunda a Sexta: 08h às 17h<br>Sábado: 08h às 12h<br>Domingo: Fechado</div>
+        </div>
+        <div style="margin-top:.5rem">
+          <a href="https://www.google.com/maps/search/?api=1&query=Display+TV+Av+Manoel+Dias+da+Silva+2342+Pituba+Salvador+BA" target="_blank" class="btn btn-outline" style="width:100%;justify-content:center">📍 Abrir no Google Maps</a>
+        </div>
+      </div>
+
+      <div class="form-card">
+        <h3>Solicite seu orçamento</h3>
+        <p style="margin-bottom:1.5rem;color:#666;">Preencha e envie direto pelo WhatsApp</p>
+        <form id="formOrcamento">
+          <div class="form-group">
+            <label for="nome">Nome *</label>
+            <input type="text" id="nome" required placeholder="Seu nome completo">
+          </div>
+          <div class="form-group">
+            <label for="telefone">Telefone / WhatsApp *</label>
+            <input type="tel" id="telefone" required placeholder="(71) 99999-9999">
+          </div>
+          <div class="form-group">
+            <label for="marca">Marca e modelo da TV</label>
+            <input type="text" id="marca" placeholder="Ex: Samsung UN55AU7700">
+          </div>
+          <div class="form-group">
+            <label for="problema">Descreva o problema</label>
+            <textarea id="problema" placeholder="Ex: TV não liga, imagem com linhas, sem som..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%">Enviar pelo WhatsApp</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.7247!2d-38.4579699!3d-13.0049328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7161beeb0e6d111%3A0xbff953a767d35d56!2sDisplay+TV!5e0!3m2!1spt-BR!2sbr!4v1727899200000!5m2!1spt-BR!2sbr"
+        width="100%"
+        height="380"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        title="Localização DisplayTV Pituba">
+      </iframe>
+    </div>
+    <p style="text-align:center;color:#666;margin-top:.5rem">📍 Av. Manoel Dias da Silva, 2342 – Loja 3, Pituba, Salvador – BA · CEP: 41830-001</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>DisplayTV Pituba</h4>
+        <p>Assistência técnica especializada em conserto de TVs em Salvador. Qualidade, garantia e honestidade.</p>
+        <p>📍 Av. Manoel Dias da Silva, 2342 – Loja 3<br>Pituba, Salvador – BA · CEP: 41830-001</p>
+      </div>
+      <div>
+        <h4>Links Rápidos</h4>
+        <a href="#inicio">Início</a>
+        <a href="#quem-somos">Quem Somos</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#faq">Dúvidas</a>
+        <a href="#contato">Contato</a>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <a href="https://wa.me/5571984541313" target="_blank">💬 WhatsApp: (71) 98454-1313</a>
+        <a href="tel:+557133466008">📞 Telefone: (71) 3346-6008</a>
+        <a href="mailto:tvdisplaypituba@gmail.com">✉️ tvdisplaypituba@gmail.com</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 DisplayTV Pituba – Todos os direitos reservados</div>
+  </div>
+</footer>
+
+<!-- WhatsApp Flutuante -->
+<a href="https://wa.me/5571984541313?text=Olá!%20Gostaria%20de%20um%20orçamento." class="wa-float" target="_blank" aria-label="WhatsApp">💬</a>
+
+<!-- Scripts -->
+<script>
+document.getElementById('formOrcamento').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const nome = document.getElementById('nome').value.trim() || 'Não informado';
+  const telefone = document.getElementById('telefone').value.trim() || 'Não informado';
+  const marca = document.getElementById('marca').value.trim() || 'Não informado';
+  const problema = document.getElementById('problema').value.trim() || 'Não informado';
+  let mensagem = 'Olá! Meu nome é *' + nome + '*.%0A%0A';
+  mensagem += '📞 Telefone: ' + telefone + '%0A';
+  mensagem += '📺 TV: ' + marca + '%0A';
+  mensagem += '📝 Problema/Serviço: ' + problema + '%0A%0A';
+  mensagem += 'Gostaria de um orçamento.';
+  window.open('https://wa.me/5571984541313?text=' + encodeURIComponent(mensagem), '_blank');
+  return false;
+});
+
+document.querySelectorAll('.nav a').forEach(link => {
+  link.addEventListener('click', () => {
+    document.querySelector('.nav').classList.remove('open');
+  });
+});
+
+document.querySelectorAll('a[href^="#"]').forEach(ancora => {
+  ancora.addEventListener('click', function(e) {
+    const alvo = document.querySelector(this.getAttribute('href'));
+    if(alvo) {
+      e.preventDefault();
+      alvo.scrollIntoView({behavior: 'smooth'});
+    }
+  });
+});
+</script>
+
+</body>
+</html>
+
+ 
